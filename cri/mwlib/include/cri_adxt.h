@@ -272,10 +272,11 @@ typedef struct _adx_talk {
 	Uint32 tvofst;						/*	スタート時間オフセット			*/
 	Uint32 svcnt;						/*	スタートV-Syncカウント			*/
 	// 2001.11.14 oshimi
-	Uint32 decofst;						/*	トータルデコードオフセット		*/
-	#ifdef __EE__
-	Sint32	flush_nsmpl;				/*	フラッシュ時に挿入したサンプル数	*/
-	#endif
+	/* the below fields have been commented out for recvx-decomp purposes */
+	//Uint32 decofst;						/*	トータルデコードオフセット		*/
+	//#ifdef __EE__
+	//Sint32	flush_nsmpl;				/*	フラッシュ時に挿入したサンプル数	*/
+	//#endif
 } ADX_TALK;
 typedef	ADX_TALK	*ADXT;
 
